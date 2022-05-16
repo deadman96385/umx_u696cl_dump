@@ -1,0 +1,1 @@
+mcfg_hw/generic/common/msm8937/la/ss/mcfg_hw.mbn

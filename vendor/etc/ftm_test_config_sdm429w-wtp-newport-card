@@ -1,0 +1,73 @@
+#Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+tc 1
+#Speaker Device
+!Playback
+Rxdevice:0
+
+enable
+mono Profile:Music
+mono Music Playback Volume:3
+QUAT_MI2S_RX Audio Mixer MultiMedia1:1
+
+disable
+QUAT_MI2S_RX Audio Mixer MultiMedia1:0
+
+tc 2
+# DMIC1 to Speakers AFE loopback
+!AfeLoop
+Txdevice:11
+Rxdevice:25
+
+enable
+QUAT_MI2S_RX Port Mixer TERT_MI2S_TX:1
+DEC1 MUX:DMIC1
+QUAT_MI2S_RX_DL_HL Switch:1
+
+disable
+QUAT_MI2S_RX Port Mixer TERT_MI2S_TX:0
+DEC1 MUX:ZERO
+QUAT_MI2S_RX_DL_HL Switch:0
+
+tc 3
+# DMIC2 to Speakers AFE loopback
+!AfeLoop
+Txdevice:11
+Rxdevice:25
+
+enable
+QUAT_MI2S_RX Port Mixer TERT_MI2S_TX:1
+DEC1 MUX:DMIC2
+QUAT_MI2S_RX_DL_HL Switch:1
+
+disable
+QUAT_MI2S_RX Port Mixer TERT_MI2S_TX:0
+DEC1 MUX:ZERO
+QUAT_MI2S_RX_DL_HL Switch:0
+
+tc 4
+#DMIC1
+!Capture
+
+enable
+MultiMedia1 Mixer TERT_MI2S_TX:1
+DEC1 MUX:DMIC1
+
+disable
+DEC1 MUX:ZERO
+MultiMedia1 Mixer TERT_MI2S_TX:0
+
+tc 5
+#DMIC2
+!Capture
+
+enable
+MultiMedia1 Mixer TERT_MI2S_TX:1
+DEC1 MUX:DMIC2
+
+disable
+DEC1 MUX:ZERO
+MultiMedia1 Mixer TERT_MI2S_TX:0
+

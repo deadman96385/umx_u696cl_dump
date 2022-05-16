@@ -1,0 +1,21 @@
+{
+    "Image_Build_IDs": {
+        "adsp": "ADSP.VT.3.0-00168-00000-1", 
+        "apps": "LA.UM.9.6.3.r1-04200-89xx.0-1", 
+        "boot": "BOOT.BF.3.3.2-00078-M8953JAAAANAZB-2", 
+        "common": "QM215.LA.3.3-00024-STD.PROD-1.429430.0.434815.1", 
+        "cpe": "CPE.TSF.3.0-00002-W9335AAAAAAAZQ-4", 
+        "glue": "GLUE.QM215_LA.3.3-02600-NOOP_TEST-1", 
+        "modem": "MPSS.JO.3.4-00044-SDM439_GENNS_PACK-1.429430.1.434815.1", 
+        "rpm": "RPM.BF.2.2-00253-M8917AAAAANAZR-1", 
+        "tz": "TZ.BF.4.0.5-00267-M8937AAAAANAZT-1", 
+        "video": "VIDEO.VE_ULT.3.1-00049-PROD-1", 
+        "wcnss": "CNSS.PR.4.0.3-00314-M8953BAAAANAZW-1"
+    }, 
+    "Metabuild_Info": {
+        "Meta_Build_ID": "QM215.LA.3.3-00024-STD.PROD-1.429430.0.434815.1", 
+        "Product_Flavor": "['asic']", 
+        "Time_Stamp": "2022-03-02 12:30:57"
+    }, 
+    "Version": "1.0"
+}
